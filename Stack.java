@@ -16,7 +16,7 @@ public class Stack
 		}
 		stack[topOfStack+1]=data;
 		topOfStack++;
-		System.out.println("inserted"+data);
+		//System.out.println("inserted"+data);
 	}
 	public static void pop()
 	{
@@ -58,13 +58,9 @@ public class Stack
 	}
 	public static void main(String[] args)
 	{
-		create(5);
-		push(5);
-		push(10);
-		push(15);
-		push(20);
-		push(25);
-		push(30);
+		create(10);
+		for(int i=1;i<=10;i++)
+			push(i*5);
 		printStack();
 		peek();
 		pop();
