@@ -62,9 +62,9 @@ public class Stack
 		for(int i=1;i<=10;i++)
 			push(i*5);
 		printStack();
-		peek();
-		pop();
-		push(30);
+		for(int i=0;i<=5;i++){
+			pop();
+		}
 		printStack();
 	}
 }
